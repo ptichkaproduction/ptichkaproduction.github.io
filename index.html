@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,19 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ptichka Production</title>
 
-  <!--
-    - favicon
-  -->
+  <!--- favicon--> 
+  
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
+  <!--- custom css link-->
+
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!--- google font link-->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -27,15 +24,11 @@
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+  <!--- #MAIN-->
 
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
+    <!--- #SIDEBAR-->
 
     <aside class="sidebar" data-sidebar>
 
@@ -127,19 +120,11 @@
 
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
+    <!--- #main-content-->
 
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
+      <!--- #NAVBAR-->
 
       <nav class="navbar">
 
@@ -169,13 +154,7 @@
 
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
+      <!--- #ABOUT-->
 
       <article class="about  active" data-page="о компании">
 
@@ -195,10 +174,7 @@
           </p>
         </section>
 
-
-        <!--
-          - service
-        -->
+        <!--- SERVICE-->
 
         <section class="service">
 
@@ -336,18 +312,6 @@
 
         </section>
 
-
-
-        <!--
-          - testimonials
-        -->
-
-        
-
-        <!--
-          - testimonials modal
-        -->
-
         <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>
@@ -384,21 +348,9 @@
 
         </div>
 
-
-        <!--
-          - clients
-        -->
-
-        
       </article>
 
-
-
-
-
-      <!--
-        - #History
-      -->
+      <!--- #History-->
 
       <article class="history" data-page="история">
 
@@ -529,13 +481,7 @@
 
       </article>
 
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
+      <!--- #PORTFOLIO-->
 
       <article class="portfolio" data-page="работы">
 
@@ -601,15 +547,34 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="c# приложения">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="python приложения">
+              <a href="https://github.com/ptichkaproduction/NullOS-LifeMod">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="VideoSee" loading="lazy">
+                  <img src="./assets/images/project-3.jpg" alt="ctOS - Life Modification" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ctOS - Life Modification</h3>
+
+                <p class="project-category">Python приложения</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="c# приложения">
+              <a href="https://github.com/ptichkaproduction/NullOS-LifeMod">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="NullOS - Life Modification" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">NullOS - Life Modification</h3>
@@ -620,7 +585,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="веб-разработка">
-              <a href="#">
+              <a href="https://github.com/ieroglive2010/VideoSee">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -636,25 +601,13 @@
 
               </a>
             </li>
-          
-            
-
-            
-
-            
           </ul>
 
         </section>
 
       </article>
 
-
-
-
-
-      <!--
-        - #BLOG
-      -->
+      <!--- #BLOG-->
 
       <article class="blog" data-page="блог">
 
@@ -665,6 +618,35 @@
         <section class="blog-posts">
 
           <ul class="blog-posts-list">
+
+          <li class="blog-post-item">
+            <a href="#">
+
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-4.jpg" alt="VideoSee beta" loading="lazy">
+              </figure>
+
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <p class="blog-category">Обновление</p>
+
+                  <span class="dot"></span>
+
+                  <time datetime="2022-02-23">Январь, 2025</time>
+                </div>
+
+                <h3 class="h3 blog-item-title">Обновление главной страницы сайта компании</h3>
+
+                <p class="blog-text">
+                  Замена нескольких предложений и добавление ссылки на Telegram-канал
+                </p>
+
+              </div>
+
+            </a>
+          </li>
+
             <li class="blog-post-item">
               <a href="#">
 
@@ -693,8 +675,6 @@
               </a>
             </li>
 
-
-          <ul class="blog-posts-list">
             <li class="blog-post-item">
               <a href="#">
 
@@ -783,13 +763,7 @@
 
       </article>
 
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
+      <!--- #CONTACT-->
 
       <article class="contact" data-page="связь с нами">
 
@@ -831,21 +805,16 @@
 
   </main>
 
+  <!--- custom js link-->
 
-
-
-
-
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
+  <!--- ionicon link-->
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!--- The cake is a lie-->
 
 </body>
 
