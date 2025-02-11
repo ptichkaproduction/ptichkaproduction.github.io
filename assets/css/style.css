@@ -610,8 +610,12 @@ main {
 
 .friends-item-title { margin-bottom: 7px; }
 
+
 .friends-text {
   color: var(--light-gray);
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  font-style: normal; 
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
