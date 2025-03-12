@@ -7,6 +7,6 @@
 - [x] Update web-page
 - [x] Change icons
 - [ ] View full text on blog
-- [ ] Multi-language Support
+- [X] Multi-language Support
     - [x] Russian
-    - [ ] English
+    - [X] English
