@@ -4,9 +4,10 @@
 
 # Roadmap
 
-- [x] Update web-page
-- [x] Change icons
+- [X] Update logo
 - [ ] View full text on blog
-- [ ] Multi-language Support
+- [X] Multi-language Support
     - [x] Russian
-    - [ ] English
+    - [X] English
+- [x] Change icons
+- [x] Update web-page
