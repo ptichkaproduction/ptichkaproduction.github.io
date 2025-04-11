@@ -4,6 +4,7 @@
 
 # Roadmap
 
+- [ ] Release this web-page
 - [X] Update logo
 - [ ] View full text on blog
 - [X] Multi-language Support
