@@ -4,9 +4,9 @@
 
 # Roadmap
 
-- [ ] Release this web-page
+- [X] Release this web-page
 - [X] Update logo
-- [ ] View full text on blog
+- [ ] View full text on blog (Maybe in future)
 - [X] Multi-language Support
     - [x] Russian
     - [X] English
