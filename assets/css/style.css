@@ -1,9 +1,24 @@
 /*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
+@font-face {
+  font-family: "Nunito";
+  src: url("Nunito-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Nunito-bold";
+  src: url("Nunito-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Nunito-ExtraBold";
+  src: url("Nunito-ExtraBold.ttf");
+}
 
 :root {
 
+  
   /**
    * colors
    */
@@ -12,56 +27,62 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    hsl(244, 31%, 21%) 3%, 
+    hsla(0, 64%, 15%, 0.185) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    hsla(0, 0%, 26%, 0.251) 0%, 
+    hsla(0, 0%, 16%, 0.103) 100%
+  ), hsla(0, 0%, 17%, 0.342);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(214, 76%, 47%) 0%, 
+    hsla(227, 42%, 15%, 0.582) 0%, 
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(271, 100%, 71%, 0.251) 0%, 
+    hsla(192, 35%, 16%, 0.251) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
+    hsla(236, 59%, 20%, 0.301) 0%, 
+    hsla(249, 59%, 22%, 0.322) 50%
+  );
+  --border-gradient-onyx-btn: linear-gradient(
+    to bottom right, 
+    hsla(236, 59%, 20%, 0.301) 0%, 
+    hsla(209, 77%, 47%, 0.322) 50%
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(216, 73%, 39%), 
-    hsl(261, 70%, 48%)
+    hsl(244, 55%, 25%), 
+    hsl(229, 60%, 42%)
   );
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
+  --jet: hsl(226, 69%, 6%);
+  --onyx: linear-gradient(200deg, rgb(6, 22, 31),  rgb(4, 42, 68)); 
+  --eerie-black-1: linear-gradient(200deg, rgb(8, 34, 51,  0.89),  rgba(4, 21, 68, 0.89)); 
+  --eerie-black-2: hsla(213, 84%, 7%, 0.712);
+  --eerie-black-3: linear-gradient(200deg, rgba(6, 25, 31, 0.938),  rgba(4, 42, 68, 0.836)); 
+  --smoky-black: linear-gradient(200deg, rgb(30, 6, 31),  rgb(4, 42, 68)); 
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(214, 77%, 38%);
   --vegas-gold: hsl(207, 79%, 46%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --bittersweet-shimmer: hsl(0, 81%, 39%);
 
   /**
    * typography
    */
 
+
   /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -84,7 +105,7 @@
    */
   
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0 16px 30px hsla(219, 44%, 23%, 0.25);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
@@ -136,11 +157,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito";
 }
 
 a { text-decoration: none; }
 
-li { list-style: none; }
+li { list-style: none;   font-family: "Nunito";}
 
 img, ion-icon, a, button, time, span { display: block; }
 
@@ -166,7 +188,7 @@ input, textarea {
 
 :focus { outline-color: var(--orange-yellow-crayola); }
 
-html { font-family: var(--ff-poppins); }
+html { font-family: var(--ff-nunito); }
 
 body { background: var(--smoky-black); }
 
@@ -238,6 +260,7 @@ article.active {
 .h4,
 .h5 {
   color: var(--white-2);
+  font-family: "Nunito-bold";
 }
 
 .h2 { font-size: var(--fs-1); }
@@ -471,7 +494,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsla(234, 26%, 16%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -491,13 +514,14 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-8);
   padding: 20px 7px;
+  font-family: "Nunito-bold";
   transition: color var(--transition-1);
 }
 
 .navbar-link:hover,
 .navbar-link:focus { color: var(--light-gray-70); }
 
-.navbar-link.active { color: var(--orange-yellow-crayola); }
+.navbar-link.active { color: var(--orange-yellow-crayola); font-family: "Nunito-ExtraBold"; }
 
 
 
@@ -675,7 +699,7 @@ main {
 }
 
 .friends-modal {
-  background: var(--eerie-black-2);
+  background: var(--eerie-black-3);
   position: relative;
   padding: 15px;
   margin: 15px 12px;
@@ -1200,7 +1224,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn {
   position: relative;
   width: 100%;
-  background: var(--border-gradient-onyx);
+  background: var(--border-gradient-onyx-btn);
   color: var(--orange-yellow-crayola);
   display: flex;
   justify-content: center;
