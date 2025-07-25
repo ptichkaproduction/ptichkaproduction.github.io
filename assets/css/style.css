@@ -30,6 +30,12 @@
     hsl(244, 31%, 21%) 3%, 
     hsla(0, 64%, 15%, 0.185) 97%
   );
+
+  --bg-gradient-onyx-logo: linear-gradient(
+    to bottom right, 
+    hsl(244, 31%, 21%) 3%, 
+    hsla(253, 64%, 15%, 0.185) 97%
+  );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
     hsla(0, 0%, 26%, 0.251) 0%, 
@@ -37,17 +43,22 @@
   ), hsla(0, 0%, 17%, 0.342);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsla(227, 42%, 15%, 0.582) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    hsla(227, 69%, 36%, 0.582) 0%, 
+    hsla(175, 65%, 29%, 0.027) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
     hsla(192, 35%, 16%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+    hsla(187, 81%, 15%, 0) 59.86%
+  ), hsla(202, 54%, 16%, 0.473);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
     hsla(236, 59%, 20%, 0.301) 0%, 
+    hsla(249, 59%, 22%, 0.322) 50%
+  );
+  --border-gradient-onyx-service: linear-gradient(
+    to bottom right, 
+    hsla(216, 90%, 19%, 0.301) 0%, 
     hsla(249, 59%, 22%, 0.322) 50%
   );
   --border-gradient-onyx-btn: linear-gradient(
@@ -63,7 +74,8 @@
 
   /* solid */
 
-  --jet: hsl(226, 69%, 6%);
+  --jet: hsl(226, 77%, 18%);
+  --jet-avatars: hsl(226, 36%, 32%);
   --onyx: linear-gradient(200deg, rgb(6, 22, 31),  rgb(4, 42, 68)); 
   --eerie-black-1: linear-gradient(200deg, rgb(8, 34, 51,  0.89),  rgba(4, 21, 68, 0.89)); 
   --eerie-black-2:linear-gradient(200deg, rgba(31, 3, 32, 0.473),  rgba(6, 21, 49, 0.623)); 
@@ -158,9 +170,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito";
+  text-decoration: none;
 }
 
-a { text-decoration: none; }
+a { text-decoration: none; color:white; }
 
 li { list-style: none;   font-family: "Nunito";}
 
@@ -219,6 +232,7 @@ article {
 
 .icon-box {
   position: relative;
+  border: px solid var(--jet);
   background: var(--border-gradient-onyx);
   width: 30px;
   height: 30px;
@@ -367,8 +381,9 @@ main {
 }
 
 .avatar-box {
-  background: var(--bg-gradient-onyx);
+  background: var(--bg-gradient-onyx-logo);
   border-radius: 20px;
+  border: 2px solid var(--jet-avatars);
 }
 
 .info-content .name {
@@ -387,6 +402,7 @@ main {
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
+  font-family: "Nunito-bold";
 }
 
 .info_more-btn {
@@ -401,6 +417,7 @@ main {
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
   z-index: 1;
+  font-family: "Nunito-bold";
 }
 
 .info_more-btn::before {
@@ -411,15 +428,16 @@ main {
   background: var(--bg-gradient-jet);
   transition: var(--transition-1);
   z-index: -1;
+  font-family: "Nunito-bold";
 }
 
 .info_more-btn:hover,
 .info_more-btn:focus { background: var(--bg-gradient-yellow-1); }
 
 .info_more-btn:hover::before,
-.info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
+.info_more-btn:focus::before {font-family: "Nunito-bold"; background: var(--bg-gradient-yellow-2); }
 
-.info_more-btn span { display: none; }
+.info_more-btn span { font-family: "Nunito-bold"; display: none; }
 
 .sidebar-info_more {
   opacity: 0;
@@ -560,7 +578,7 @@ main {
 
 .service-item {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--border-gradient-onyx-service);
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -628,7 +646,8 @@ main {
   left: 0;
   transform: translate(15px, -25px);
   background: var(--bg-gradient-onyx);
-  border-radius: 14px;
+  border-radius: 19px;
+  border: 3px solid var(--jet-avatars);
   box-shadow: var(--shadow-1);
 }
 
@@ -918,7 +937,7 @@ main {
   #PORTFOLIO
 \*-----------------------------------*/
 
-.filter-list { display: none; }
+.filter-list { display: none;}
 
 .filter-select-box {
   position: relative;
@@ -1592,13 +1611,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button {
     color: var(--light-gray);
+    font-family: "Nunito-bold";
     font-size: var(--fs-5);
     transition: var(--transition-1);
   }
 
   .filter-item button:hover { color: var(--light-gray-70); }
 
-  .filter-item button.active { color: var(--orange-yellow-crayola); }
+  .filter-item button.active { color: var(--orange-yellow-crayola); font-family: "Nunito-Extrabold";}
 
   /* portfolio and blog grid */
 
@@ -1822,7 +1842,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .info-content .title { margin: auto; }
 
-  .info_more-btn { display: none; }
+  .info_more-btn { display: none; font-family: "Nunito-bold";}
 
   .sidebar-info_more {
     opacity: 1;
