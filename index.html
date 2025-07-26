@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<!--- TO DO LIST:
-1. View brief info in the projects tab
-2. View full text on blog
-3. Fix the bugs
-4. Add ENG lang (maybe)-->
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -627,6 +621,9 @@
               <button data-filter-btn>Python приложения</button>
             </li>
 
+            <li class="filter-item">
+              <button data-filter-btn>Android-приложения</button>
+            </li>
           </ul>
 
           <div class="filter-select-box">
@@ -659,11 +656,36 @@
                 <button data-select-item>python приложения</button>
               </li>
 
+              
+              <li class="select-item">
+                <button data-select-item>android-приложения</button>
+              </li>
+
+
             </ul>
 
           </div>
 
           <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="android-приложения">
+              <a href="https://github.com/ptichkaproduction/ptichka-pr0d-t3st-app">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projects-images/github-preview-7.jpg" alt="Тестовая утилита Ptichka Prod." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Тестовая утилита Ptichka Production</h3>
+
+                <p class="project-category">Android-приложения</p>
+
+              </a>
+            </li>
+
 
             <li class="project-item  active" data-filter-item data-category="python приложения">
               <a href="https://github.com/ptichkaproduction/ctOS-Life-Modification">
@@ -774,6 +796,34 @@
 
           <ul class="blog-posts-list">
 
+            <li class="blog-post-item" data-blog-post-item>
+              <a href="#">
+  
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blogs-images/blog-7.jpg" alt="Redesign" loading="lazy">
+                </figure>
+  
+                <div class="blog-content">
+  
+                  <div class="blog-meta">
+                    <p class="blog-category">Редизайн</p>
+  
+                    <span class="dot"></span>
+  
+                    <time datetime="2022-02-23">Июль, 2025</time>
+                  </div>
+  
+                  <h3 class="h3 blog-item-title">Редизайн сайта Ptichka Production</h3>
+  
+                  <p class="blog-text">
+                    Было решено провести небольшой редизайн сайта. Сама его структура не была изменена, но он обред темно-сине-фиолетовые оттенки и прозрачность
+                  </p>
+  
+                </div>
+  
+              </a>
+            </li>
+
           <li class="blog-post-item" data-blog-post-item>
             <a href="#">
 
@@ -811,7 +861,7 @@
               <div class="blog-content">
 
                 <div class="blog-meta">
-                  <p class="blog-category">Обновление логотипа</p>
+                  <p class="blog-category">Редизайн</p>
 
                   <span class="dot"></span>
 
@@ -922,7 +972,7 @@
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Обновление</p>
+                    <p class="blog-category">Редизайн, обновление</p>
 
                     <span class="dot"></span>
 
