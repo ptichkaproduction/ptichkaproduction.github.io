@@ -27,14 +27,14 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(244, 31%, 21%) 3%, 
+    hsl(191, 31%, 26%) 3%, 
     hsla(0, 64%, 15%, 0.185) 97%
   );
 
   --bg-gradient-onyx-logo: linear-gradient(
     to bottom right, 
-    hsl(244, 31%, 21%) 3%, 
-    hsla(253, 64%, 15%, 0.185) 97%
+    hsl(202, 31%, 21%) 3%, 
+    hsla(187, 64%, 15%, 0.185) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
@@ -43,7 +43,7 @@
   ), hsla(0, 0%, 17%, 0.342);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsla(227, 69%, 36%, 0.582) 0%, 
+    hsla(227, 58%, 20%, 0.582) 0%, 
     hsla(175, 65%, 29%, 0.027) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
@@ -63,8 +63,8 @@
   );
   --border-gradient-onyx-btn: linear-gradient(
     to bottom right, 
-    hsla(236, 59%, 20%, 0.301) 0%, 
-    hsla(209, 77%, 47%, 0.322) 50%
+    hsla(194, 59%, 20%, 0.301) 0%, 
+    hsla(210, 24%, 31%, 0.322) 50%
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
@@ -78,9 +78,9 @@
   --jet-avatars: hsl(226, 36%, 32%);
   --onyx: linear-gradient(200deg, rgb(6, 22, 31),  rgb(4, 42, 68)); 
   --eerie-black-1: linear-gradient(200deg, rgb(8, 34, 51,  0.89),  rgba(4, 21, 68, 0.89)); 
-  --eerie-black-2:linear-gradient(200deg, rgba(31, 3, 32, 0.473),  rgba(6, 21, 49, 0.623)); 
+  --eerie-black-2:linear-gradient(200deg, rgba(3, 7, 32, 0.473),  rgba(6, 21, 49, 0.623)); 
   --eerie-black-3: linear-gradient(200deg, rgba(6, 25, 31, 0.938),  rgba(4, 42, 68, 0.836)); 
-  --smoky-black: linear-gradient(200deg, rgb(30, 6, 31),  rgb(4, 42, 68)); 
+  --smoky-black: linear-gradient(200deg, rgb(16, 6, 31),  rgb(4, 42, 68)); 
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(214, 77%, 38%);
@@ -1089,8 +1089,66 @@ main {
 }
 
 
+.lang-switch {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
 
+.lang-switch p { margin-bottom: 15px; }
 
+.lang-title {
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.lang-info :is(.contact-link, time, address) {
+  color: var(--white-2);
+  font-size: var(--fs-7);
+}
+
+/**
+ * JOB APPLICATION 
+ */
+.application-title { margin-bottom: 20px; margin-top: 20px;}
+.application {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.application p { margin-bottom: 15px; }
+
+.job-btn {
+  position: relative;
+  width: 100%;
+  background: var(--border-gradient-onyx-btn);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.job-btn ion-icon { font-size: 16px; }
+
+.job-btn:hover { background: var(--bg-gradient-yellow-1); }
+
+  .job-btn {
+    width: max-content;
+    margin-right: auto;
+  }
+  
 
 /*-----------------------------------*\
   #BLOG
