@@ -17,7 +17,6 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 
 // friends variables
-const friendsItem = document.querySelectorAll("[data-friends-item]");
 const blogItem = document.querySelectorAll("[data-blog-post-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
@@ -27,32 +26,6 @@ const overlay = document.querySelector("[data-overlay]");
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const friendsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
-
-// add click event to all modal items
-for (let i = 0; i < friendsItem.length; i++) {
-
-  friendsItem[i].addEventListener("click", function () {
-
-    modalImg.src = this.querySelector("[data-friends-avatar]").src;
-    modalImg.alt = this.querySelector("[data-friends-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-friends-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-friends-text]").innerHTML;
-
-    friendsModalFunc();
-
-  });
-
-}
-
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", friendsModalFunc);
-overlay.addEventListener("click", friendsModalFunc);
 
 
 
